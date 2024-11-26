@@ -82,7 +82,7 @@ setDefaultValuesIfPrimaryColorMissing();
 //});
 
 function loadIframe() {
-    var iframeSrc = 'https://https://anubgwebsite.github.io/list/'; // VERY IMPORTANT THIS IS WHERE THE URL FOR THE GAMES IS KEPT SO IF YOU WANT TO USE YOUR OWN WEBSITE THEN CHANGE THIS LINK!
+    var iframeSrc = 'https://anubgwebsite.github.io/list/'; // VERY IMPORTANT THIS IS WHERE THE URL FOR THE GAMES IS KEPT SO IF YOU WANT TO USE YOUR OWN WEBSITE THEN CHANGE THIS LINK!
   //  var gameVariable = getGameVariable();
     iframeSrc += gameName;
 
