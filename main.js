@@ -41,10 +41,10 @@ insertHTMLIntoBody();
 //     localStorage.setItem('background-image', '/background.png');
 // }
 // if (!localStorage.getItem('primary-color')) {
-//    localStorage.setItem('primary-color', '#11E2C');
+//    localStorage.setItem('primary-color', '#000000');
 // }
 // if (!localStorage.getItem('secondary-color')) {
-//     localStorage.setItem('secondary-color', '#58AAFC');
+//     localStorage.setItem('secondary-color', '#FC5858');
 // }
 // if (!localStorage.getItem('background-res')) {
 //   localStorage.setItem('background-res', '1280');
