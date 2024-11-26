@@ -62,8 +62,8 @@ function setDefaultValuesIfPrimaryColorMissing() {
     if (!customisationData || customisationData.split('\n')[1] === '') {
         const defaultCustomisation = [
             '/background.png',  // Default background image
-            '#111E2C',          // Default primary color
-            '#58AAFC',          // Default secondary color
+            '#c91919',          // Default primary color
+            '#0f0f0f',          // Default secondary color
             '100'              // Default background resolution
         ].join('\n');
 
@@ -71,34 +71,10 @@ function setDefaultValuesIfPrimaryColorMissing() {
         localStorage.setItem('customisation', defaultCustomisation);
     }
 }
-// IF NEEDED TO REPLACE THEME SUCH AS SEASONAL UPDATE!
-function checkAndUpdateCustomisationValues() {
-    const customisationData = localStorage.getItem('customisation');
-
-    if (customisationData) {
-        const dataParts = customisationData.split('\n'); // Split into lines
-        const backgroundRes = dataParts[3]?.trim(); // Extract and trim the background resolution
-
-        // Check if "background-res" exists, is numeric, and exceeds 500
-        if (backgroundRes && !isNaN(backgroundRes) && parseInt(backgroundRes, 10) > 500) {
-            // Manually set the default values
-            const defaultCustomisation = [
-                '/background.png',  // Default background image
-                '#111E2C',          // Default primary color
-                '#58AAFC',          // Default secondary color
-                '100'               // Default background resolution
-            ].join('\n');
-
-            // Update localStorage with default values
-            localStorage.setItem('customisation', defaultCustomisation);
-        }
-    }
-}
-
 
 // Call the functions in order
 setDefaultValuesIfPrimaryColorMissing();
-checkAndUpdateCustomisationValues();
+
 
 
 //document.addEventListener('DOMContentLoaded', function() {
